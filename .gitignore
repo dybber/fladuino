@@ -1,7 +1,11 @@
 */#*
-rapport/*/*.log
-rapport/*/*.aux
-rapport/*/*.aux
-rapport/*/*.bbl
-rapport/*/*.blg
-rapport/*/*.pdf
+tex/*/*.log
+tex/*/*.aux
+tex/*/*.aux
+tex/*/*.bbl
+tex/*/*.blg
+tex/*/*.pdf
+tex/*/*.toc
+tex/*/*.out
+tex/*/auto/*
+tex/*/*.bib

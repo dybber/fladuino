@@ -1,0 +1,71 @@
+\documentclass[10pt,a4paper,final,oneside,openany,article,twocolumn]{memoir}
+
+%BASIC PACKAGES
+\usepackage[danish,english]{babel} % last language decides document language!
+\usepackage[utf8x]{inputenc}          %text encoding
+\usepackage{amsmath,amssymb, amsbsy}  % math
+\usepackage{graphicx}
+\usepackage[british]{isodate}
+\usepackage[style=alphabetic,natbib=true]{biblatex}
+\usepackage[sc]{mathpazo}
+\usepackage{microtype}        % AWESOME typography!
+\usepackage[draft]{fixme}
+
+
+\bibliography{../bibliography}
+
+\newsubfloat{figure}
+
+%FONT
+\usepackage[T1]{fontenc}
+\usepackage{palatino}              % font : garamond
+\linespread{1.05}                  % Palatino needs more leading (space between lines)
+\usepackage[scaled]{beramono}
+
+%PDF OUTPUT
+\usepackage{hyperref}             % clickable url's in PDF-output
+\hypersetup{
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=black
+}
+
+%DOCUMENT INFO
+\title{\vspace{-1.5cm}
+  Reactive programming of embedded devices 
+}
+\author{
+  Martin Dybdal -- \texttt{dybber@dybber.dk}\\
+  Troels Henriksen -- \texttt{athas@sigkill.dk} \\
+  Jesper Reenberg -- \texttt{reenberg@diku.dk}
+}
+
+%\datebritish
+\date{26th October 2010}
+
+\begin{document}
+\twocolumn[\maketitle
+\begin{onecolabstract}
+  \vspace{-0.2cm}
+  
+  \vspace{1.5cm}
+\end{onecolabstract}
+]
+
+\chapter{Introduction}
+
+
+
+
+\chapter{Evaluation}
+
+\chapter{Future Work}
+
+\chapter{Conclusion}
+
+\defbibheading{bibliography}{\chapter{Bibliography}} 
+\printbibliography
+
+\end{document}
+

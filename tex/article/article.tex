@@ -1,7 +1,7 @@
 \documentclass[10pt,a4paper,final,oneside,openany,article,twocolumn]{memoir}
 
 %BASIC PACKAGES
-\usepackage[danish,english]{babel} % last language decides document language!
+\usepackage[english]{babel} % last language decides document language!
 \usepackage[utf8x]{inputenc}          %text encoding
 \usepackage{amsmath,amssymb, amsbsy}  % math
 \usepackage{graphicx}
@@ -47,8 +47,23 @@
 \begin{document}
 \twocolumn[\maketitle
 \begin{onecolabstract}
-  \vspace{-0.2cm}
+  \vspace{-0.2cm} Embedded control systems are conventionally
+  programmed in low-level imperative languages, with no concepts like
+  events or synchronicity, as provided by functional reactive
+  languages, such as Frob or Yampa. These languages though depends on
+  a complete runtime system, which does not fit on resource
+  constrained embedded devices.
+
+  For the domain of \textit{sensor-networks}, Geoffrey Mainland
+  suggests a compilation-strategy which allows programs to be
+  specified with Haskell, but without needing Haskells runtime
+  system. The tasks performed on a sensor-network node is limited as
+  there are no need of actuation. We extend on Mainlands work, to
+  allow programs to listen for events and react on those events
+  through actuators.
   
+  We present \textit{Fladuino} (combination of Flask and Arduino)
+  through a number of examples in the control-system domain.
   \vspace{1.5cm}
 \end{onecolabstract}
 ]

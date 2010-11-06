@@ -47,26 +47,38 @@
 \begin{document}
 \twocolumn[\maketitle
 \begin{onecolabstract}
-  \vspace{-0.2cm} Embedded control systems are conventionally
-  programmed in low-level imperative languages, with no concepts like
-  events or synchronicity, as provided by functional reactive
-  languages, such as Frob or Yampa. These languages though depends on
-  a complete runtime system, which does not fit on resource
-  constrained embedded devices.
+  % Evt. reference til Frob, Yampa o.l.
+  \vspace{-0.2cm} Embedded devices are conventionally programmed in
+  low-level imperative languages, with no concepts like events,
+  syncronisity or data-flow abstractions. The work done on functional
+  reactive programming at Yale by Hudak et. al., demonstrates the power of
+  using languages based on these principles for programming control
+  systems.
 
-  For the domain of \textit{sensor-networks}, Geoffrey Mainland
-  suggests a compilation-strategy which allows programs to be
-  specified with Haskell, but without needing Haskells runtime
-  system. The tasks performed on a sensor-network node is limited as
-  there are no need of actuation. We extend on Mainlands work, to
-  allow programs to listen for events and react on those events
-  through actuators.
-  
+  The Yale research group doesn't tackle the problem of executing
+  their code on the more resource constrained embedded devices. Their
+  implementations depends on the Haskell runtime system which has too
+  high resource demands.  For the domain of \textit{sensor-networks},
+  Geoffrey Mainland has shown how Haskell can be used as a
+  meta-language solely for generating the low-level programs. With
+  this compilation strategy, the overhead of the Haskell runtime
+  system is avoided.
+
+  The tasks performed on a sensor-network node is limited as there are
+  no need of actuation. We extend on Mainlands work, to allow programs
+  to listen for events and react on those events through
+  actuators. Part of contribution is also a way of defining device
+  drivers for new devices that can generate events (such as the click
+  of a simple hardware button)
+
   We present \textit{Fladuino} (combination of Flask and Arduino)
   through a number of examples in the control-system domain.
   \vspace{1.5cm}
 \end{onecolabstract}
 ]
+
+% Keywords: functional reactive programming, meta-language,
+%           object-language
 
 \chapter{Introduction}
 \cite{arrowsrobotsfrp02}
